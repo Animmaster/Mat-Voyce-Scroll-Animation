@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  gap: 4em;
+  z-index: 2;
+}
+
+.logo {
+  flex: 3;
+}
+
+.logo-img {
+  width: 120px;
+}
+
+.tagline,
+.about {
+  flex: 1;
+}
+
+nav p {
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav p span {
+  color: gray;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: 500;
+  color: #1f1f1f;
+}
+
+.hero,
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edebde;
+}
+
+.sticky {
+  background-color: #fffef8;
+}
+
+.titles {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 400vw;
+  height: 100vh;
+  display: flex;
+  will-change: transform;
+}
+
+.title {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9vw;
+  font-style: italic;
+  will-change: transform;
+}
+
+h1.title-1 {
+  color: #dafa6c;
+}
+
+h1.title-2 {
+  color: #10d0f4;
+}
+
+h1.title-3 {
+  color: #1f1f1f;
+}
+
+.images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200vw;
+  height: 200vh;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  z-index: -1;
+}
+
+.card {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 2em;
+  background: #c0c0c0;
+  transform-style: preserve-3d;
+  will-change: transform;
+  overflow: hidden;
+}
+
+    
